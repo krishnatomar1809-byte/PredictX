@@ -21,7 +21,7 @@ const Dashboard = () => {
           <h1 className="text-3xl font-bold mb-2">Welcome back, {user?.fullname || 'User'}</h1>
           <p className="text-text-muted">Select a module below to start a new analysis</p>
         </div>
-        <div className="hidden sm:flex items-center space-x-3 bg-surface border border-white/5 px-4 py-2 rounded-xl">
+        <div className="hidden sm:flex items-center space-x-3 bg-surface border border-primary/10 px-4 py-2 rounded-xl">
           <div className="h-10 w-10 bg-primary/20 rounded-full flex items-center justify-center">
             <User className="h-5 w-5 text-primary" />
           </div>

@@ -37,7 +37,7 @@ const Signup = () => {
 
   return (
     <div className="min-h-[80vh] flex">
-      <div className="hidden lg:flex w-1/2 bg-surface flex-col justify-center items-center p-12 relative overflow-hidden border-r border-white/5">
+      <div className="hidden lg:flex w-1/2 bg-surface flex-col justify-center items-center p-12 relative overflow-hidden border-r border-primary/10">
         <div className="absolute bottom-[-20%] right-[-20%] w-[60%] h-[60%] rounded-full bg-accent/10 blur-[120px]" />
         <div className="relative z-10 text-center max-w-md">
           <div className="bg-primary/20 p-4 rounded-3xl inline-block mb-8">
@@ -121,7 +121,7 @@ const Signup = () => {
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-white transition-colors"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-text-main transition-colors"
                   >
                     {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
                   </button>

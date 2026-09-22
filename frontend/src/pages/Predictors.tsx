@@ -100,8 +100,8 @@ const Predictors = () => {
                     {module.description}
                   </p>
                   
-                  <div className="flex items-center justify-between border-t border-white/5 pt-6 mt-auto">
-                    <div className="flex items-center text-sm text-text-muted bg-white/5 px-3 py-1.5 rounded-lg">
+                  <div className="flex items-center justify-between border-t border-primary/10 pt-6 mt-auto">
+                    <div className="flex items-center text-sm text-text-muted bg-primary/5 px-3 py-1.5 rounded-lg">
                       <module.inputIcon className="h-4 w-4 mr-2" />
                       {module.inputType}
                     </div>

@@ -62,7 +62,7 @@ const DiabetesPredictor = () => {
             
             {/* Patient Info */}
             <div className="card p-6 border-blue-400/10">
-              <h3 className="text-lg font-semibold mb-4 flex items-center text-white">
+              <h3 className="text-lg font-semibold mb-4 flex items-center text-text-main">
                 <User className="h-5 w-5 mr-2 text-blue-400" />
                 Patient Information
               </h3>
@@ -84,7 +84,7 @@ const DiabetesPredictor = () => {
 
             {/* Blood & Metabolic */}
             <div className="card p-6 border-blue-400/10">
-              <h3 className="text-lg font-semibold mb-4 flex items-center text-white">
+              <h3 className="text-lg font-semibold mb-4 flex items-center text-text-main">
                 <Droplet className="h-5 w-5 mr-2 text-blue-400" />
                 Glucose & Blood Metrics
               </h3>
@@ -109,7 +109,7 @@ const DiabetesPredictor = () => {
 
             {/* Body Metrics */}
             <div className="card p-6 border-blue-400/10">
-              <h3 className="text-lg font-semibold mb-4 flex items-center text-white">
+              <h3 className="text-lg font-semibold mb-4 flex items-center text-text-main">
                 <Flame className="h-5 w-5 mr-2 text-blue-400" />
                 Body Metrics & History
               </h3>
@@ -157,7 +157,7 @@ const DiabetesPredictor = () => {
         <div>
           {/* Status Panel */}
           <div className="card p-6 h-full flex flex-col sticky top-24 border-blue-400/20">
-            <h3 className="text-lg font-semibold mb-6 flex items-center border-b border-white/5 pb-4">
+            <h3 className="text-lg font-semibold mb-6 flex items-center border-b border-primary/10 pb-4">
               <Activity className="h-5 w-5 text-blue-400 mr-2" />
               Analysis Results
             </h3>
@@ -181,13 +181,13 @@ const DiabetesPredictor = () => {
                     )}
                   </div>
                   <h4 className="text-xl font-bold mb-2">Prediction Complete</h4>
-                  <p className="text-lg text-text-main font-medium p-4 bg-surface-hover rounded-xl border border-white/5">
+                  <p className="text-lg text-text-main font-medium p-4 bg-surface-hover rounded-xl border border-primary/10">
                     {result.result}
                   </p>
                 </div>
 
-                <div className="mt-auto pt-6 border-t border-white/5 space-y-3">
-                  <button className="w-full flex items-center justify-center py-3 text-sm font-medium text-text-main hover:text-blue-400 transition-colors bg-white/5 hover:bg-white/10 rounded-xl">
+                <div className="mt-auto pt-6 border-t border-primary/10 space-y-3">
+                  <button className="w-full flex items-center justify-center py-3 text-sm font-medium text-text-main hover:text-blue-400 transition-colors bg-primary/5 hover:bg-primary/10 rounded-xl">
                     <Download className="h-4 w-4 mr-2" />
                     Download PDF Report
                   </button>

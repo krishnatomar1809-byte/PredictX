@@ -26,7 +26,7 @@ const About = () => {
             System Architecture
           </h2>
           
-          <div className="relative border-l border-white/10 ml-6 space-y-8 pb-4">
+          <div className="relative border-l border-primary/20 ml-6 space-y-8 pb-4">
             {pipeline.map((step, idx) => (
               <motion.div 
                 key={step.id}
@@ -36,11 +36,11 @@ const About = () => {
                 transition={{ delay: idx * 0.1 }}
                 className="relative pl-8"
               >
-                <div className="absolute -left-[17px] top-1 h-8 w-8 rounded-full bg-surface border border-white/10 flex items-center justify-center">
+                <div className="absolute -left-[17px] top-1 h-8 w-8 rounded-full bg-surface border border-primary/20 flex items-center justify-center">
                   <div className="h-2 w-2 rounded-full bg-primary" />
                 </div>
                 
-                <div className="card p-6 bg-white/[0.02]">
+                <div className="card p-6 bg-surface">
                   <div className="flex items-center mb-3">
                     <step.icon className="h-5 w-5 text-primary mr-3" />
                     <h3 className="text-lg font-semibold">{step.title}</h3>
@@ -49,7 +49,7 @@ const About = () => {
                 </div>
                 
                 {idx < pipeline.length - 1 && (
-                  <ArrowDown className="absolute -bottom-6 left-[6px] h-4 w-4 text-white/20" />
+                  <ArrowDown className="absolute -bottom-6 left-[6px] h-4 w-4 text-text-main/20" />
                 )}
               </motion.div>
             ))}
@@ -63,8 +63,8 @@ const About = () => {
           </h2>
           
           <div className="space-y-6">
-            <div className="card p-6 border-white/5">
-              <h3 className="font-semibold mb-4 text-white">Frontend Architecture</h3>
+            <div className="card p-6 border-primary/10">
+              <h3 className="font-semibold mb-4 text-text-main">Frontend Architecture</h3>
               <div className="flex flex-wrap gap-2">
                 {['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Lucide Icons'].map(tech => (
                   <span key={tech} className="px-3 py-1 bg-primary/10 text-primary rounded-lg text-sm font-medium border border-primary/20">
@@ -74,8 +74,8 @@ const About = () => {
               </div>
             </div>
 
-            <div className="card p-6 border-white/5">
-              <h3 className="font-semibold mb-4 text-white">Backend Services</h3>
+            <div className="card p-6 border-primary/10">
+              <h3 className="font-semibold mb-4 text-text-main">Backend Services</h3>
               <div className="flex flex-wrap gap-2">
                 {['Node.js', 'Express', 'JWT Auth', 'REST APIs', 'Multer'].map(tech => (
                   <span key={tech} className="px-3 py-1 bg-accent/10 text-accent rounded-lg text-sm font-medium border border-accent/20">
@@ -85,8 +85,8 @@ const About = () => {
               </div>
             </div>
 
-            <div className="card p-6 border-white/5">
-              <h3 className="font-semibold mb-4 text-white">Machine Learning & Data</h3>
+            <div className="card p-6 border-primary/10">
+              <h3 className="font-semibold mb-4 text-text-main">Machine Learning & Data</h3>
               <div className="flex flex-wrap gap-2">
                 {['Python', 'Scikit-Learn', 'TensorFlow/Keras', 'MongoDB', 'Mongoose'].map(tech => (
                   <span key={tech} className="px-3 py-1 bg-success/10 text-success rounded-lg text-sm font-medium border border-success/20">
@@ -96,8 +96,8 @@ const About = () => {
               </div>
             </div>
             
-            <div className="card p-6 bg-surface-hover border-white/10 mt-8">
-              <h3 className="font-semibold mb-3 flex items-center text-white">
+            <div className="card p-6 bg-surface-hover border-primary/20 mt-8">
+              <h3 className="font-semibold mb-3 flex items-center text-text-main">
                 <ShieldCheck className="text-success h-5 w-5 mr-2" />
                 Privacy First
               </h3>

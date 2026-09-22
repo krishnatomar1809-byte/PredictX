@@ -18,7 +18,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8"
+              className="inline-flex items-center space-x-2 bg-primary/5 border border-primary/20 rounded-full px-4 py-1.5 mb-8"
             >
               <span className="flex h-2 w-2 rounded-full bg-success"></span>
               <span className="text-sm font-medium text-text-muted">Multi-Disease Prediction Platform</span>
@@ -55,7 +55,7 @@ const Home = () => {
                 Explore Predictors
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-              <Link to="/about" className="w-full sm:w-auto px-8 py-4 rounded-full border border-white/10 hover:bg-white/5 transition-colors text-lg font-medium">
+              <Link to="/about" className="w-full sm:w-auto px-8 py-4 rounded-full border border-primary/20 hover:bg-primary/5 transition-colors text-lg font-medium">
                 How It Works
               </Link>
             </motion.div>
@@ -64,7 +64,7 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-surface/50 border-y border-white/5">
+      <section className="py-24 bg-surface/50 border-y border-primary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Available Prediction Modules</h2>
@@ -129,7 +129,7 @@ const Home = () => {
                 <div className="absolute -inset-0.5 bg-gradient-to-br from-primary to-accent rounded-3xl opacity-20 blur"></div>
                 <div className="relative space-y-6">
                   {/* Mock dashboard element */}
-                  <div className="flex items-center justify-between p-4 bg-surface rounded-xl border border-white/5">
+                  <div className="flex items-center justify-between p-4 bg-surface rounded-xl border border-primary/10">
                     <div className="flex items-center space-x-4">
                       <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
                         <ShieldCheck className="h-5 w-5 text-primary" />
@@ -142,7 +142,7 @@ const Home = () => {
                     <div className="text-success text-sm font-medium">Secured</div>
                   </div>
                   
-                  <div className="flex items-center justify-between p-4 bg-surface rounded-xl border border-white/5">
+                  <div className="flex items-center justify-between p-4 bg-surface rounded-xl border border-primary/10">
                     <div className="flex items-center space-x-4">
                       <div className="h-10 w-10 rounded-full bg-accent/20 flex items-center justify-center">
                         <Activity className="h-5 w-5 text-accent" />
@@ -162,7 +162,7 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 bg-surface py-12">
+      <footer className="border-t border-primary/20 bg-surface py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
             <Activity className="h-5 w-5 text-primary" />

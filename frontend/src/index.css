@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #020617; /* Slate 950 */
-  --color-surface: #0f172a; /* Slate 900 */
-  --color-surface-hover: #1e293b; /* Slate 800 */
-  --color-primary: #3b82f6; /* Blue 500 */
-  --color-accent: #06b6d4; /* Cyan 500 */
-  --color-text-main: #f8fafc;
-  --color-text-muted: #94a3b8;
+  --color-brand: #f0f9ff; /* Sky 50 */
+  --color-surface: #ffffff; /* White */
+  --color-surface-hover: #e0f2fe; /* Sky 100 */
+  --color-primary: #0ea5e9; /* Sky 500 */
+  --color-accent: #38bdf8; /* Sky 400 */
+  --color-text-main: #0f172a; /* Slate 900 */
+  --color-text-muted: #64748b; /* Slate 500 */
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
@@ -23,24 +23,24 @@ body {
 
 /* Glassmorphism utility */
 .glass {
-  background: rgba(15, 23, 42, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(14, 165, 233, 0.1);
 }
 
 .card {
   background-color: var(--color-surface);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(14, 165, 233, 0.1);
   border-radius: 1.5rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(14, 165, 233, 0.05), 0 2px 4px -1px rgba(14, 165, 233, 0.03);
 }
 
 .input-field {
   width: 100%;
-  background-color: var(--color-brand);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
+  background-color: #ffffff;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  color: var(--color-text-main);
   padding: 0.75rem 1rem;
   border-radius: 0.75rem;
   transition: all 0.2s ease;
@@ -49,7 +49,7 @@ body {
 .input-field:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
 }
 
 .btn-primary {

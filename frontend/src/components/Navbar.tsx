@@ -65,7 +65,7 @@ const Navbar = () => {
                 <Link to="/dashboard" className="text-sm font-medium text-text-muted hover:text-primary">
                   Dashboard
                 </Link>
-                <div className="flex items-center space-x-4 ml-4 pl-4 border-l border-white/10">
+                <div className="flex items-center space-x-4 ml-4 pl-4 border-l border-primary/20">
                   <div className="flex items-center space-x-2 text-sm text-text-main">
                     <User className="h-4 w-4 text-primary" />
                     <span>{user.fullname}</span>
@@ -106,7 +106,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass border-t border-white/10"
+            className="md:hidden glass border-t border-primary/20"
           >
             <div className="px-4 pt-2 pb-6 space-y-1 flex flex-col">
               {navLinks.map((link) => (
@@ -114,7 +114,7 @@ const Navbar = () => {
                   key={link.name}
                   to={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-3 text-base font-medium text-text-muted hover:text-primary hover:bg-white/5 rounded-lg"
+                  className="block px-3 py-3 text-base font-medium text-text-muted hover:text-primary hover:bg-primary/5 rounded-lg"
                 >
                   {link.name}
                 </Link>
@@ -124,7 +124,7 @@ const Navbar = () => {
                   <Link
                     to="/dashboard"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block px-3 py-3 text-base font-medium text-text-muted hover:text-primary hover:bg-white/5 rounded-lg"
+                    className="block px-3 py-3 text-base font-medium text-text-muted hover:text-primary hover:bg-primary/5 rounded-lg"
                   >
                     Dashboard
                   </Link>
@@ -133,7 +133,7 @@ const Navbar = () => {
                       logout();
                       setIsMobileMenuOpen(false);
                     }}
-                    className="block w-full text-left px-3 py-3 text-base font-medium text-error hover:bg-white/5 rounded-lg"
+                    className="block w-full text-left px-3 py-3 text-base font-medium text-error hover:bg-primary/5 rounded-lg"
                   >
                     Logout ({user.username})
                   </button>
@@ -143,7 +143,7 @@ const Navbar = () => {
                   <Link
                     to="/login"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-center py-3 text-base font-medium text-text-main border border-white/10 rounded-xl"
+                    className="text-center py-3 text-base font-medium text-text-main border border-primary/20 rounded-xl"
                   >
                     Login
                   </Link>

@@ -98,10 +98,10 @@ const LungPredictor = () => {
                 onDragLeave={handleDragLeave}
                 onDrop={handleDrop}
                 className={`border-2 border-dashed rounded-[1.25rem] p-12 text-center transition-all ${
-                  isDragging ? 'border-teal-400 bg-teal-400/5' : 'border-white/10 hover:border-teal-400/30 hover:bg-white/5'
+                  isDragging ? 'border-teal-400 bg-teal-400/5' : 'border-primary/20 hover:border-teal-400/30 hover:bg-primary/5'
                 }`}
               >
-                <div className="h-20 w-20 bg-surface rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm border border-white/5">
+                <div className="h-20 w-20 bg-surface rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm border border-primary/10">
                   <Upload className="h-10 w-10 text-teal-400" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Upload CT Scan Image</h3>
@@ -123,12 +123,12 @@ const LungPredictor = () => {
               </div>
             ) : (
               <div className="p-6">
-                <div className="relative rounded-xl overflow-hidden bg-black/50 border border-white/10 mb-6 flex justify-center items-center h-[300px]">
+                <div className="relative rounded-xl overflow-hidden bg-black/50 border border-primary/20 mb-6 flex justify-center items-center h-[300px]">
                   <img src={previewUrl} alt="Preview" className="max-h-full max-w-full object-contain" />
                   {!isUploading && !result && (
                     <button
                       onClick={removeFile}
-                      className="absolute top-4 right-4 h-8 w-8 bg-black/50 hover:bg-error rounded-full flex items-center justify-center text-white transition-colors backdrop-blur-sm"
+                      className="absolute top-4 right-4 h-8 w-8 bg-black/50 hover:bg-error rounded-full flex items-center justify-center text-text-main transition-colors backdrop-blur-sm"
                     >
                       <X className="h-4 w-4" />
                     </button>
@@ -153,7 +153,7 @@ const LungPredictor = () => {
                 ) : (
                   <button
                     onClick={removeFile}
-                    className="w-full py-4 rounded-full border border-white/10 hover:bg-white/5 transition-colors font-medium flex items-center justify-center"
+                    className="w-full py-4 rounded-full border border-primary/20 hover:bg-primary/5 transition-colors font-medium flex items-center justify-center"
                   >
                     <FileImage className="h-5 w-5 mr-2" />
                     Upload New Scan
@@ -174,7 +174,7 @@ const LungPredictor = () => {
         <div className="md:col-span-2">
           {/* Status Panel */}
           <div className="card p-6 h-full flex flex-col">
-            <h3 className="text-lg font-semibold mb-6 flex items-center border-b border-white/5 pb-4">
+            <h3 className="text-lg font-semibold mb-6 flex items-center border-b border-primary/10 pb-4">
               <Zap className="h-5 w-5 text-teal-400 mr-2" />
               Analysis Results
             </h3>
@@ -198,13 +198,13 @@ const LungPredictor = () => {
                     )}
                   </div>
                   <h4 className="text-xl font-bold mb-2">Prediction Complete</h4>
-                  <p className="text-lg text-text-main font-medium p-4 bg-surface-hover rounded-xl border border-white/5">
+                  <p className="text-lg text-text-main font-medium p-4 bg-surface-hover rounded-xl border border-primary/10">
                     {result.prediction}
                   </p>
                 </div>
 
-                <div className="mt-auto pt-6 border-t border-white/5">
-                  <button className="w-full flex items-center justify-center py-3 text-sm font-medium text-text-main hover:text-teal-400 transition-colors bg-white/5 hover:bg-white/10 rounded-xl">
+                <div className="mt-auto pt-6 border-t border-primary/10">
+                  <button className="w-full flex items-center justify-center py-3 text-sm font-medium text-text-main hover:text-teal-400 transition-colors bg-primary/5 hover:bg-primary/10 rounded-xl">
                     <Download className="h-4 w-4 mr-2" />
                     Download PDF Report
                   </button>
